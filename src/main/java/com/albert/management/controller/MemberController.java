@@ -74,6 +74,12 @@ public class MemberController {
         memberRepository.deleteInBatch(memberDTOs);
     }
 
+
+    @GetMapping("/members")
+    public List<MemberDTO> getAllMembers() {
+        return memberRepository.findAll();
+    }
+
     @GetMapping("/member/{id}")
     public Optional<MemberDTO> getMemberById(@PathVariable Long id) {
         return memberRepository.findById(id);
