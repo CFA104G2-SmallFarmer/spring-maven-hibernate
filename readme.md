@@ -15,11 +15,13 @@
   5. servelt-jsp依賴引入
 - 待辦：
   1. 測試自建postgreSQL
+  2. .env建立
   2. hibernate引入
   3. 完成mem CRUD
 
 ### 其他項目
-1. refactor (會員-->認養)
+1. 異地重建
+2. refactor (會員-->認養)
 2. hibernate報錯紀錄
 3. 手動部屬
 4. 自動部屬
