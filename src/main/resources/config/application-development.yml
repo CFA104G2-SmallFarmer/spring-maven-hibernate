@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: false
+    remote:
+      restart:
+        enabled: false
+  datasource:
+    url: jdbc:h2:file:./target/h2db/db/local;DB_CLOSE_DELAY=-1
+    username: albert
+    password: 
+  jpa:
+    database: H2
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
