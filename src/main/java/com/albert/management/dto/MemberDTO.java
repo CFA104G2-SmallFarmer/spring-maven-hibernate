@@ -15,7 +15,8 @@ import io.swagger.annotations.ApiModelProperty;
 public class MemberDTO {
 
     @Id
-    @ApiModelProperty(value = "會員ID", example = "1001", required = false)
+    @ApiModelProperty(value = "會員ID", example = "1001", required = false, hidden=true)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name")

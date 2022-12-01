@@ -45,7 +45,7 @@ public class MemberController {
     public ResponseEntity<MemberDTO> createMember(@RequestBody MemberDTO memberDTO) {
         //memberDTO={ id='1001', name='Albert'}
         //memberDTO.getClass()=class com.albert.management.dto.MemberDTO
-        if (memberRepository.findById(memberDTO.getId()).isPresent()) {//false
+        if (memberRepository.findByNameIs(memberDTO.getName()).isPresent()) {//false
             return ResponseEntity.status(400).header("err-msg", "A new member cannot already have an id").build();
         }
         return ResponseEntity.ok().body(memberRepository.save(memberDTO));
