@@ -16,10 +16,13 @@ spring:
       restart:
         enabled: false
   datasource:
-    url: jdbc:h2:file:./target/h2db/db/local;DB_CLOSE_DELAY=-1
-    username: albert
-    password: 
+#    url: jdbc:h2:file:./target/h2db/db/local;DB_CLOSE_DELAY=-1
+    url: jdbc:mysql://localhost:3306/cfa104g2?serverTimezone=Asia/Taipei
+    username: root
+    password:
+    hikari:
+      auto-commit: false
   jpa:
-    database: H2
-    database-platform: org.hibernate.dialect.H2Dialect
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
