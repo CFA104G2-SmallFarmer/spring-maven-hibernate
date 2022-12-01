@@ -6,6 +6,28 @@
    - http://localhost:8080/swagger-ui/
 3. ...
 
+### 待辦
+1. ~~異地重建~~
+2. ~~hibernate引入~~
+2. refactor (會員-->認養)
+2. hibernate 報錯觀察
+3. 手動部屬
+4. 自動部屬
+5. 微服務拆分
+6. 測試自建postgreSQL (與liquibase不相容)
+7. .env建立 (暫以uncommit處理)
+8. 完成mem CRUD
+
+### 20221201
+- 完成：
+    1. [modify] minimized config, use jetty
+    2. [modify] change logging setting
+    3. [modify] 改以mysql連線
+    4. [modify] 開啟autoincrement - liquibase調整
+    5. [modify] 開啟autoincrement - unique key設定、自訂欄位查詢功能、api doc內隱藏id、測試新增時id可自增
+- 待辦：
+    1. 完成mem CRUD
+
 ### 20221129
 - 完成：
   1. 完成專案建立
@@ -13,16 +35,4 @@
   3. 連線測試失敗
   4. 建立readme.md
   5. servelt-jsp依賴引入
-- 待辦：
-  1. 測試自建postgreSQL
-  2. .env建立
-  2. hibernate引入
-  3. 完成mem CRUD
 
-### 其他項目
-1. ~~異地重建~~
-2. refactor (會員-->認養)
-2. hibernate報錯紀錄
-3. 手動部屬
-4. 自動部屬
-5. 微服務拆分
