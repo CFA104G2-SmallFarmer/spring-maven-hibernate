@@ -10,16 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class ManagementApplication {
-  private static final Logger log = LoggerFactory.getLogger(ManagementApplication.class);
+public class Application {
+  private static final Logger log = LoggerFactory.getLogger(Application.class);
 
   public static void main(String[] args) {
-    SpringApplication.run(ManagementApplication.class, args);
+    SpringApplication.run(Application.class, args);
     log.debug(
       "\n----------------------------------------------------------------------\n\t" + 
       "Application '{}' is running!\n" + 
       "----------------------------------------------------------------------",
-      ManagementApplication.class.getSimpleName()
+      Application.class.getSimpleName()
     );
   }
 
