@@ -43,7 +43,9 @@ public class MemberController {
         @ApiResponse(responseCode="400", description="cannot contain id")
     })
     public ResponseEntity<MemberDTO> createMember(@RequestBody MemberDTO memberDTO) {
-        if (memberDTO.getId() != null) {
+        //memberDTO={ id='1001', name='Albert'}
+        //memberDTO.getClass()=class com.albert.management.dto.MemberDTO
+        if (memberRepository.findById(memberDTO.getId()).isPresent()) {//false
             return ResponseEntity.status(400).header("err-msg", "A new member cannot already have an id").build();
         }
         return ResponseEntity.ok().body(memberRepository.save(memberDTO));

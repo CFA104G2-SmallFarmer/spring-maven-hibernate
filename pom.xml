@@ -135,6 +135,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-devtools</artifactId>
                     <optional>true</optional>
+                    <scope>provided</scope><!--部署時將不會打包到jar/war裡面;因此工具建議用於Local開發使用。-->
                 </dependency>
             </dependencies>
         </profile>

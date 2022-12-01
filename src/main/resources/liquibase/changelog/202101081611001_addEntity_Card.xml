@@ -3,7 +3,7 @@
 
     <changeSet id="202101081611001" author="albert">
         <createTable tableName="card">
-            <column name="member_id" type="bigint" autoIncrement="false">
+            <column name="member_id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false" />
             </column>
             <column name="level" type="int">

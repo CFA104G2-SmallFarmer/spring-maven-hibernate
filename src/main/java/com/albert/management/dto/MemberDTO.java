@@ -15,8 +15,6 @@ import io.swagger.annotations.ApiModelProperty;
 public class MemberDTO {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence_generator")
-    @SequenceGenerator(name = "sequence_generator")
     @ApiModelProperty(value = "會員ID", example = "1001", required = false)
     private Long id;
 
