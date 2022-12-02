@@ -16,7 +16,13 @@
 5. 微服務拆分
 6. 測試自建postgreSQL (與liquibase不相容)
 7. .env建立 (暫以uncommit處理)
-8. 完成mem CRUD
+8. 前端react，後端只出api
+
+
+### 2022120
+- 完成：
+    1. [modify] 完成mem CRUD
+
 
 ### 20221201
 - 完成：
@@ -25,14 +31,12 @@
     3. [modify] 改以mysql連線
     4. [modify] 開啟autoincrement - liquibase調整
     5. [modify] 開啟autoincrement - unique key設定、自訂欄位查詢功能、api doc內隱藏id、測試新增時id可自增
-- 待辦：
-    1. 完成mem CRUD
 
 ### 20221129
 - 完成：
-  1. 完成專案建立
-  2. hello world test
-  3. 連線測試失敗
-  4. 建立readme.md
-  5. servelt-jsp依賴引入
+    1. 完成專案建立
+    2. hello world test
+    3. 連線測試失敗
+    4. 建立readme.md
+    5. servelt-jsp依賴引入
 

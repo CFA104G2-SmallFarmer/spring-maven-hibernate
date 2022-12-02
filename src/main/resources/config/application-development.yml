@@ -26,3 +26,9 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
     show-sql: true
+
+#jsp設定(暫時不做)
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/jsp/
+#      suffix: .jsp
