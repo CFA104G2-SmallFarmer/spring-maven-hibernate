@@ -22,6 +22,7 @@
 ### 2022120
 - 完成：
     1. [modify] 完成mem CRUD
+    2. [modify] 完成fmem CRUD
 
 
 ### 20221201
